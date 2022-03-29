@@ -45,9 +45,9 @@ saveTab.addEventListener('click', () => {
     // grab url of the tab
     readLater.push(tabs[0].url);
     localStorage.setItem('readLater', JSON.stringify(readLater));
+    list.textContent = '';
+    render(readLater);
   });
-  list.textContent = '';
-  render(readLater);
 });
 
 // (value, key) local storage only takes in strings
