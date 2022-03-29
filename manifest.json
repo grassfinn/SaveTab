@@ -4,5 +4,8 @@
     "name": "Readme Later",
     "action": {
         "default_popup": "index.html"
-    }
+    },
+    "permissions": [
+        "tabs"
+    ]
 }
